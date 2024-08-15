@@ -83,7 +83,7 @@
 #ifdef TBLE_DUAL_2U
  &kp LCTRL  &kp LGUI   &kp LALT   &mo NAV_L         &shifty                        &kp SPACE                &mo NUM_L   &kp LALT   &kp RGUI      &kp RSHIFT
 #elif defined(TBLE_MIT)
- &none  &mo LCTRL   &kp LALT  &kp LGUI    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp FSLH    &kp LEFT     &kp DOWN      &kp RIGHT
+ &none  &kp LCTRL   &kp LALT  &kp LGUI    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp FSLH    &kp LEFT     &kp DOWN      &kp RIGHT
 #else
  &kp SYM_L  &mo LCTRL   &kp LALT  &kp LGUI    &mo NAV_L      &kp SPACE      &kp RET          &mo NUM_L      &kp FSLH    &kp LEFT     &kp DOWN      &kp RIGHT
 #endif
