@@ -11,8 +11,8 @@
 
 #define QWERTY_BASE 1
 
-#define TBLE_ORTHO   1
-// #define TBLE_MIT     1
+// #define TBLE_ORTHO   1
+   #define TBLE_MIT     1
 // #define TBLE_DUAL_2U 1
 
 #define NAV_L 1
@@ -83,8 +83,8 @@
             bindings = <
 &kp TILDE      &kp EXCL     &kp AT     &kp HASH      &kp DLLR          &kp PRCNT       &kp CARET     &kp AMPS         &kp STAR      &kp LPAR   &kp RPAR     &trans
 &trans      &kp F1       &kp F2     &kp F3        &kp F4            &kp F5          &kp F6        &kp UNDERSCORE       &kp PLUS    &kp LBKT     &kp RBKT  &kp PIPE
-&trans      &kp F7       &kp F8     &kp F9        &kp F10           &kp F11         &kp F12       &trans          &trans       &trans       &trans   &trans
-&trans  &trans        &trans     &trans      &trans                &trans             &trans     &trans   &trans &trans &trans
+&trans      &kp F7       &kp F8     &kp F9        &kp F10           &kp F11         &kp F12       &trans          &trans       &trans       &trans        &trans
+ &kp LCTRL  &kp LEFT_CONTROL   &kp LALT  &kp LGUI       &trans                &trans             &trans     &trans   &trans &trans &trans
 
             >;
         };
@@ -95,7 +95,7 @@
 &kp GRAVE     &kp N1   &kp N2 &kp N3 &kp N4    &kp N5    &kp N6    &kp N7           &kp N8      &kp N9       &kp N0     &trans
 &trans     &kp F1   &kp F2 &kp F3 &kp F4    &kp F5    &kp F6    &kp MINUS   &kp EQUAL    &kp LBRC   &kp RBRC     &kp BSLH
 &trans     &kp F7   &kp F8 &kp F9 &kp F10   &kp F11   &kp F12   &trans     &trans      &trans       &trans     &trans
-&trans  &trans       &trans     &trans      &trans           &trans            &trans        &trans      &trans &trans &trans
+ &kp LCTRL  &kp LEFT_CONTROL   &kp LALT  &kp LGUI      &trans           &trans            &trans        &trans      &trans &trans &trans
             >;
         };
 
@@ -105,7 +105,7 @@
 &kp TAB     &trans     &trans    &trans       &trans       &trans     &trans     &trans    &trans       &trans       &trans     &sys_reset
 &trans     &trans     &trans    &trans       &trans       &trans     &trans     &trans    &trans       &trans       &trans     &trans
 &bt BT_CLR &bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)    &bt BT(4)  &bt BT_DISC     &trans    &trans       &trans       &trans     &trans
-&trans &trans        &trans     &trans        &trans                &trans             &trans      &trans   &trans &trans &trans
+ &kp LCTRL  &kp LEFT_CONTROL   &kp LALT  &kp LGUI      &trans                &trans             &trans      &trans   &trans &trans &trans
             >;
         };
 
