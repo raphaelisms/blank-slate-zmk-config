@@ -55,7 +55,7 @@
     };
 
 // Conditional layer only when we have less thumb keys
-#ifdef TBLE_DUAL_2U
+#ifdef TBLE_MIT
     cond_layers {
         compatible = "zmk,conditional-layers";
 	tri {
@@ -83,7 +83,7 @@
 #ifdef TBLE_DUAL_2U
  &kp LCTRL  &kp LGUI   &kp LALT   &mo NAV_L         &shifty                        &kp SPACE                &mo NUM_L   &kp LALT   &kp RGUI      &kp RSHIFT
 #elif defined(TBLE_MIT)
- &kp SYM_L  &mo LCTRL   &kp LALT  &kp LGUI    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp FSLH    &kp LEFT     &kp DOWN      &kp RIGHT
+ &none  &mo LCTRL   &kp LALT  &kp LGUI    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp FSLH    &kp LEFT     &kp DOWN      &kp RIGHT
 #else
  &kp SYM_L  &mo LCTRL   &kp LALT  &kp LGUI    &mo NAV_L      &kp SPACE      &kp RET          &mo NUM_L      &kp FSLH    &kp LEFT     &kp DOWN      &kp RIGHT
 #endif
@@ -99,7 +99,7 @@
 #ifdef TBLE_DUAL_2U
 &trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
-&trans  &trans        &trans     &trans      &trans                &trans             &mo SYM_L      &trans   &trans &trans &trans
+&trans  &trans        &trans     &trans      &trans                &trans             &trans     &trans   &trans &trans &trans
 #else
 &trans  &trans        &trans     &trans      &trans          &trans       &trans    &trans  &trans         &trans &trans &trans
 #endif
@@ -115,7 +115,7 @@
 #ifdef TBLE_DUAL_2U
 &trans  &trans       &trans     &trans              &trans                 &trans            &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
-&trans  &trans       &trans     &trans      &mo SYM_L           &trans            &trans        &trans      &trans &trans &trans
+&trans  &trans       &trans     &trans      &trans           &trans            &trans        &trans      &trans &trans &trans
 #else
 &trans  &trans       &trans     &trans      &trans    &none         &none     &trans        &trans      &trans &trans &trans
 #endif
